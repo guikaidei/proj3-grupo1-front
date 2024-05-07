@@ -7,13 +7,14 @@ import { EditaBicicleta } from './bicicletas/EditaBicicletas'
 import { DeletaBicicleta } from './bicicletas/DeletaBicicletas'
 import { GetStatusBicicleta } from './bicicletas/GetStatusBicicletas'
 import { AtualizaBicicleta } from './bicicletas/AtualizaStatusBicicletas'
+import { ListaAluguelBicicletas } from './bicicletas/ListaAluguel'
 
 function App() {
 
 
   return (
     <>
-      <h1>Ex 5 times</h1>
+      <h1>Rent-a-Bike</h1>
       <Grid container>
     
         <Grid item xs={4}>
@@ -40,6 +41,9 @@ function App() {
             <Grid item xs={12}>
               <Link to='/atualizarStatusBicicleta'>Atualizar Status Bicicleta</Link>
             </Grid>
+            <Grid item xs={12}>
+              <Link to='/listarAluguelBicicleta'>Listar Aluguel Bicicleta</Link>
+            </Grid>
 
 
             
@@ -65,6 +69,9 @@ function App() {
           </Routes>
           <Routes>
             <Route path='/atualizarStatusBicicleta' element={<AtualizaBicicleta/>} />
+          </Routes>
+          <Routes>
+            <Route path='/listarAluguelBicicleta' element={<ListaAluguelBicicletas/>} />
           </Routes>
 
 

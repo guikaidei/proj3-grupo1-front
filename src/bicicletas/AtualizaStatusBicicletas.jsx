@@ -67,7 +67,7 @@ export function AtualizaBicicleta() {
                 <Grid container columnSpacing={2} rowSpacing={1}>
                     <ItemForm label={"ID:"} value={id} set={setId}></ItemForm>
                 </Grid>
-                <Button variant="outlined" onClick={() => click()}>Deletar</Button>
+                <Button variant="outlined" onClick={() => click()}>Atualizar</Button>
 
             </div>
             <Snackbar
